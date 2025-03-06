@@ -103,7 +103,7 @@ def viagem_message():
                             "- A data de entrega será essa mesmo? Se não, qual data de sua preferência?\n\n"+
                             "- O endereço de entrega está correto?\n\n"
                             "* Se houver alguma dificuldade de acesso ao endereço (rua estreita, escada...), pode nos informar?\n\n"
-                            "Agradecemos sua colaboração, em breve o seu produto será entregue! Muito obrigado por escolher a Cassol para a realização de sua compra!")
+                            "Agradecemos sua colaboração, em breve o seu produto será entregue! Muito obrigado por escolher a XXXXXX para a realização de sua compra!")
     data_frame["LINK MESSAGE"] = "https://web.whatsapp.com/send" + "?" + "phone=55"+ data_frame["FONECEL"] + "&text=" + data_frame["MESSAGE"].apply(lambda x: urllib.parse.quote(x))
 
     links = data_frame["LINK MESSAGE"]
@@ -125,7 +125,7 @@ def regiao_message():
                             "- A data de entrega será essa mesmo? Se não, qual data de sua preferência?\n\n"+
                             "- O endereço de entrega está correto?\n\n"
                             "* Se houver alguma dificuldade de acesso ao endereço (rua estreita, escada...), pode nos informar?\n\n"
-                            "Agradecemos sua colaboração, em breve o seu produto será entregue! Muito obrigado por escolher a Cassol para a realização de sua compra!")
+                            "Agradecemos sua colaboração, em breve o seu produto será entregue! Muito obrigado por escolher a XXXXXX para a realização de sua compra!")
     data_frame["LINK MESSAGE"] = "https://web.whatsapp.com/send" + "?" + "phone=55"+ data_frame["FONECEL"] + "&text=" + data_frame["MESSAGE"].apply(lambda x: urllib.parse.quote(x))
 
     links = data_frame["LINK MESSAGE"]
@@ -166,7 +166,7 @@ def parana_message():
                             "- A data de entrega será essa mesmo? Se não, qual data de sua preferência?\n\n"+
                             "- O endereço de entrega está correto?\n\n"
                             "* Se houver alguma dificuldade de acesso ao endereço (rua estreita, escada...), pode nos informar?\n\n"
-                            "Agradecemos sua colaboração, em breve o seu produto será entregue! Muito obrigado por escolher a Cassol para a realização de sua compra!")
+                            "Agradecemos sua colaboração, em breve o seu produto será entregue! Muito obrigado por escolher a XXXXXX para a realização de sua compra!")
     data_frame["LINK MESSAGE"] = "https://web.whatsapp.com/send" + "?" + "phone=55"+ data_frame["FONECEL"] + "&text=" + data_frame["MESSAGE"].apply(lambda x: urllib.parse.quote(x))
 
     links = data_frame["LINK MESSAGE"]
