@@ -1,4 +1,4 @@
-# WhatsApp Message Sender and Data Cleaning Automation
+# WhatsApp Message Sender
 
 This repository contains a Python script designed to automate the process of sending WhatsApp messages to customers for order reviews, delivery confirmations, and other related tasks. Additionally, it includes a data cleaning function to maintain system performance by clearing temporary files and running disk cleanup.
 
