@@ -3,11 +3,8 @@ import pandas as pd
 import base64
 import urllib.parse 
 import pyautogui
-import pyperclip
 import webbrowser as web
 import time
-import os
-import subprocess
 import schedule as shd
 
 cnxn = pyodbc.connect(
@@ -33,10 +30,6 @@ def limpeza_de_dados():
     pyautogui.write('exit')
     time.sleep(1)
     pyautogui.press('enter')
-
-def abrir_excel_atrasos_BI():
-    arquivo_excel = r"ADD THE FILE PATH"
-    subprocess.Popen([r"ADD THE PROGRAM PATH", arquivo_excel])
 
 def send_message(link, index):
 
@@ -207,14 +200,6 @@ shd.every().wednesday.at("06:30").do(limpeza_de_dados)
 shd.every().thursday.at("06:30").do(limpeza_de_dados)
 shd.every().friday.at("06:30").do(limpeza_de_dados)
 shd.every().saturday.at("06:30").do(limpeza_de_dados)
-
-# delayed order:
-shd.every().monday.at("07:10").do(abrir_excel_atrasos_BI)
-shd.every().tuesday.at("07:10").do(abrir_excel_atrasos_BI)
-shd.every().wednesday.at("07:10").do(abrir_excel_atrasos_BI)
-shd.every().thursday.at("07:10").do(abrir_excel_atrasos_BI)
-shd.every().friday.at("07:10").do(abrir_excel_atrasos_BI)
-shd.every().saturday.at("07:10").do(abrir_excel_atrasos_BI)
 
 # Message:
 shd.every().monday.at("08:00").do(main)

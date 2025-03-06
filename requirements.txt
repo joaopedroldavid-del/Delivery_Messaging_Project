@@ -6,7 +6,6 @@ pandas       # Efficient data structures and analysis tools
 
 # Libraries for automation and clipboard management
 pyautogui    # Automation of mouse and keyboard actions
-pyperclip    # Copy and paste text to the clipboard
 
 # Library for task scheduling
 schedule     # Schedule and execute functions at specific times
